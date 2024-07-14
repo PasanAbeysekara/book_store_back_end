@@ -7,7 +7,7 @@ final store:Client sClient = check new();
 // Apply service-level CORS configuration
 @http:ServiceConfig {
     cors: {
-        allowOrigins: ["https://feff533a-00b8-423f-86a4-88b558680eba.e1-us-cdp-2.choreoapps.dev"],
+        allowOrigins: ["http://localhost:3000","https://feff533a-00b8-423f-86a4-88b558680eba.e1-us-cdp-2.choreoapps.dev"],
         allowCredentials: false,
         allowHeaders: ["Content-Type", "Authorization", "x-jwt-assertion"],
         exposeHeaders: ["Content-Length", "Content-Type"],
