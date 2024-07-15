@@ -9,9 +9,9 @@ final store:Client sClient = check new();
     cors: {
         allowOrigins: ["*"],
         allowCredentials: false,
-        allowHeaders: ["Content-Type", "Authorization", "x-jwt-assertion"],
-        exposeHeaders: ["Content-Length", "Content-Type"],
-        maxAge: 3600
+        allowMethods: ["GET", "POST", "PUT", "DELETE"],
+        allowHeaders: ["Authorization","content-type", "Accept", "x-jwt-assertion"],
+        maxAge: 84900
     }
 }
 service / on new http:Listener(9090) {
